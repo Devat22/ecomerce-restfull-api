@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+    <script>
+        
+        let note10 = {
+            catId:1,
+            product_name:"Note 10",
+            product_description: "The Samsung Galaxy Note 10 (stylized as Samsung Galaxy Note10) is a line of Android-based phablets designed, developed, produced and marketed by Samsung Electronics as part of the Samsung Galaxy Note series",
+            product_price:980,
+            product_image:"https://image-us.samsung.com/us/smartphones/galaxy-note10/v1/images/galaxy-note10_highlights_mobile_kv.jpg"
+        }  
+        let iphone = {
+            catId:1,
+            product_name:"Iphone XS MAX",
+            product_description: "Get credit for your current iPhone when you trade up to iPhone XS. Experience advanced Face ID and the Super Retina display.",
+            product_price:1099,
+            product_image:"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-xs-max-silver-select-2018?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1550795409264"
+        }  
+        let oneplus = {
+            catId:1,
+            product_name:"OnePlus 7 Pro",
+            product_description: "The OnePlus 7 Pro has an edge-to-edge full-screen display with breathtaking smoothness and clarity.",
+            product_price:680,
+            product_image:"https://cdn.tmobile.com/content/dam/t-mobile/en-p/cell-phones/OnePlus/OnePlus-7-Pro/Nebula-Blue/OnePlus-7-Pro-Nebula-Blue-frontimage.jpg"
+        } 
+        let azuz = {
+            catId:2,
+            product_name:"AZUZ ZEN BOOK",
+            product_description: "Buy ASUS ZenBook UX533 Ultra Slim Compact Laptop, 15.6 FHD 4-Way NanoEdge, Intel Core i7-8565U, 16GB DDR4, 1TB PCIe SSD, GeForce GTX 1050",
+            product_price:1500,
+            product_image:"https://c1.neweggimages.com/ProductImage/34-235-117-V01.jpg"
+        }   
+        let macbook = {
+            catId:2,
+            product_name:"MACBOOK PRO",
+            product_description: "6-Core 8th-Generation Intel Core i7 Processor Brilliant Retina Display with true Tone technology Touch Bar and Touch ID Radeon Pro 555x or 560x ",
+            product_price:3000,
+            product_image:"https://images-na.ssl-images-amazon.com/images/I/61iVOmuO1pL._SX569_.jpg"
+        }  
+        let acer = {
+            catId:2,
+            product_name:"ACER NITRO",
+            product_description: "Only at Best Buy Windows 10 Home NVIDIA GeForce GTX 1050 Ti 4GB dedicated graphics Technical details: 8th Gen Intel® Core™ i5-8300H processor; 15.6",
+            product_price:1200,
+            product_image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6212/6212602cv1d.jpg"
+        }  
+        let hp = {
+            catId:3,
+            product_name:"HP OMEN",
+            product_description: "HP OMEN Obelisk by HP Desktop: Play graphically intense games with this HP OMEN Obelisk desktop computer. ",
+            product_price:1022,
+            product_image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6349/6349466_sd.jpg;maxHeight=640;maxWidth=550"
+        }  
+        let imac = {
+            catId:3,
+            product_name:"IMAC",
+            product_description: "Get an in-depth look at the latest iMac and buy online. Select a model or customize your own.",
+            product_price:2900,
+            product_image:"https://as-images.apple.com/is/imac-27-cto-hero-201903?wid=1200&hei=630&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1553120926412"
+        }  
+        let dell = {
+            catId:3,
+            product_name:"DELL OptiPlex",
+            product_description: "OptiPlex has 25 years of experience delivering customer-led innovation for desktops by continuously adapting to the way you work. Now featuring versatile, space-saving form factors and 8th generation Intel® Processors to unleash your full potential",
+            product_price:1305,
+            product_image:"https://i.dell.com/sites/imagecontent/products/PublishingImages/optiplex/aio/27-7760/desktop_optiplex_27_7760_aio_pdp_01.jpg"
+        }  
+        axios.post("https://e-commerce-api.herokuapp.com/api/product/save",note10) 
+        .then(res=>console.log(res))
+        .catch(err=>console.log(err))
+        axios.post("https://e-commerce-api.herokuapp.com/api/product/save",iphone) 
+        .then(res=>console.log(res))
+        .catch(err=>console.log(err))
+        axios.post("https://e-commerce-api.herokuapp.com/api/product/save",oneplus) 
+        .then(res=>console.log(res))
+        .catch(err=>console.log(err))
+        axios.post("https://e-commerce-api.herokuapp.com/api/product/save",acer) 
+        .then(res=>console.log(res))
+        .catch(err=>console.log(err))
+        axios.post("https://e-commerce-api.herokuapp.com/api/product/save",azuz) 
+        .then(res=>console.log(res))
+        .catch(err=>console.log(err))
+        axios.post("https://e-commerce-api.herokuapp.com/api/product/save",macbook) 
+        .then(res=>console.log(res))
+        .catch(err=>console.log(err))
+        axios.post("https://e-commerce-api.herokuapp.com/api/product/save",imac) 
+        .then(res=>console.log(res))
+        .catch(err=>console.log(err))
+        axios.post("https://e-commerce-api.herokuapp.com/api/product/save",hp) 
+        .then(res=>console.log(res))
+        .catch(err=>console.log(err))
+        axios.post("https://e-commerce-api.herokuapp.com/api/product/save",dell) 
+        .then(res=>console.log(res))
+        .catch(err=>console.log(err))
+
+    </script>
+</body>
+</html>
